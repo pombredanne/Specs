@@ -2,7 +2,7 @@
   "name": "TwilioAuth",
   "version": "1.1.0",
   "summary": "Twilio Auth SDK",
-  "description": "The TwilioAuth SDK lets you embed Time-based One Time Passwords (TOTP) or OneTouch (Push) authenticators into your mobile application. Your apps can then be used to generate TOTP codes for login or approve logins via push.",
+  "description": "The TwilioAuth SDK lets you embed Time-based One Time Passwords (TOTP) or OneTouch (Push) authenticators\n  into your mobile application. Your apps can then be used to generate TOTP codes for login or approve logins via push.\n  WARNING: If you were using v1.0.1 or v1.1.0 and went directly to v1.2.0, there was a change which might break your application and\n  prevent users from logging in. This problem was due to a change in how the SDK uses local storage. We have fixed this\n  issue in v1.2.1, so please use this latest version in your applications.",
   "homepage": "https://www.twilio.com/two-factor-authentication",
   "platforms": {
     "ios": "8.1"

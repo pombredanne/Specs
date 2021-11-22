@@ -20,7 +20,7 @@
   "vendored_frameworks": "XADCustomEventForMopub.framework",
   "dependencies": {
     "mopub-ios-sdk": [
-      "~> 4.15"
+      "4.15"
     ],
     "GroundTruthDisplaySDK": [
       "~> 1.0.0"

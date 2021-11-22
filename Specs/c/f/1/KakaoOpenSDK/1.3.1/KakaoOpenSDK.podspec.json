@@ -8,24 +8,20 @@
     "Kakao": "apiteam@kakao.com"
   },
   "source": {
-    "http": "https://developers.kakao.com/download/sdk/ios/kakao-ios-sdk-1.3.1.zip"
+    "http": "http://devrepo.kakao.com:8088/nexus/content/groups/public/com/kakao/sdk/KakaoOpenSDK/1.3.1/KakaoOpenSDK-1.3.1.zip"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
+  "static_framework": true,
   "subspecs": [
     {
       "name": "KakaoOpenSDK",
-      "frameworks": [
-        "UIKit",
-        "WebKit"
-      ],
       "vendored_frameworks": "KakaoOpenSDK.framework"
     },
     {
       "name": "KakaoCommon",
-      "frameworks": "UIKit",
       "vendored_frameworks": "KakaoCommon.framework"
     },
     {
@@ -35,7 +31,6 @@
 
         ]
       },
-      "frameworks": "UIKit",
       "vendored_frameworks": "KakaoNavi.framework"
     },
     {
@@ -45,7 +40,6 @@
 
         ]
       },
-      "frameworks": "UIKit",
       "vendored_frameworks": "KakaoLink.framework"
     },
     {
@@ -55,7 +49,6 @@
 
         ]
       },
-      "frameworks": "Foundation",
       "vendored_frameworks": "KakaoS2.framework"
     }
   ]

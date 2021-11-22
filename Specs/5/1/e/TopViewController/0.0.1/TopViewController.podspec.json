@@ -17,7 +17,8 @@
     "git": "https://github.com/geor-kasapidi/TopViewController.git",
     "tag": "v0.0.1"
   },
-  "source_files": "Source",
+  "source_files": "Sources",
+  "public_header_files": "Sources/*.h",
   "frameworks": "UIKit",
   "requires_arc": true
 }
