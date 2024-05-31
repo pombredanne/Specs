@@ -2,30 +2,14 @@
   "name": "TuyaSmartCameraM",
   "version": "4.31.5",
   "summary": "open SDK code for tuya smart camera.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://registry.code.tuya-inc.top/tuyaIOS/TuyaSmartCameraMImp",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fulang@tuya.com": "fulang@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
-  "source": {
-    "http": "https://images.tuyacn.com/smart/app/package/developer/sdk/1632315588-TuyaSmartCameraM-4.31.5.zip",
-    "type": "zip"
-  },
-  "platforms": {
-    "ios": "9.0"
-  },
-  "static_framework": true,
-  "libraries": [
-    "c++",
-    "z",
-    "iconv",
-    "bz2",
-    "resolv"
-  ],
+  "homepage": "https://tuya.com",
   "frameworks": [
     "UIKit",
     "Foundation",
@@ -38,6 +22,26 @@
     "Photos",
     "GLKit"
   ],
+  "libraries": [
+    "c++",
+    "z",
+    "iconv",
+    "bz2",
+    "resolv"
+  ],
+  "source": {
+    "http": "https://images.tuyacn.com/smart/app/package/developer/sdk/1632315588-TuyaSmartCameraM-4.31.5.zip",
+    "type": "zip"
+  },
+  "static_framework": true,
+  "cocoapods_version": ">= 1.10",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "ios": {
+    "vendored_frameworks": "Build/TuyaSmartCameraM.xcframework",
+    "source_files": "Build/TuyaSmartCameraM.xcframework/ios-arm64_armv7/TuyaSmartCameraM.framework/Headers/*"
+  },
   "dependencies": {
     "TuyaCameraSDK": [
 
@@ -54,12 +58,5 @@
     "TuyaSmartP2pChannelKit": [
 
     ]
-  },
-  "cocoapods_version": ">= 1.10",
-  "vendored_frameworks": [
-    "Build/TuyaSmartCameraM.xcframework"
-  ],
-  "source_files": [
-    "Build/TuyaSmartCameraM.xcframework/ios-arm64_armv7/TuyaSmartCameraM.framework/Headers/*"
-  ]
+  }
 }

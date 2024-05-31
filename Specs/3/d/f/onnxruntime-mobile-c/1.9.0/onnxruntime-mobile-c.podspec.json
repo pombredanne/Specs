@@ -10,7 +10,7 @@
   },
   "homepage": "https://github.com/microsoft/onnxruntime",
   "source": {
-    "http": "https://onnxruntimepackages.blob.core.windows.net/ortmobilestore/onnxruntime-mobile-c-1.9.0.zip"
+    "http": "https://onnxruntimepackages.z14.web.core.windows.net/pod-archive-onnxruntime-mobile-c-1.9.0.zip"
   },
   "summary": "ONNX Runtime Mobile C/C++ Pod",
   "platforms": {

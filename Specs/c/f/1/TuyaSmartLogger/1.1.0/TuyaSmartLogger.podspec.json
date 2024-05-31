@@ -7,7 +7,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "fulang@tuya.com": "fulang@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
   "homepage": "https://tuya.com",
   "source": {
@@ -15,15 +15,22 @@
     "type": "zip"
   },
   "static_framework": true,
+  "ios": {
+    "frameworks": "Foundation",
+    "vendored_frameworks": "ios/TuyaSmartLogger.framework"
+  },
   "platforms": {
     "ios": "9.0"
-  },
-  "ios": {
-    "vendored_frameworks": "ios/TuyaSmartLogger.framework"
   },
   "dependencies": {
     "CocoaLumberjack": [
 
     ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
 }

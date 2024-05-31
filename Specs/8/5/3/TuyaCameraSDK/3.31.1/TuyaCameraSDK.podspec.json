@@ -3,13 +3,13 @@
   "version": "3.31.1",
   "summary": "open SDK code for tuya smart camera.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://registry.code.tuya-inc.top/tuyaIOSCamera/ipc-client-cxx-camera-sdk",
+  "homepage": "https://tuya.com",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "wangjing@tuya.com": "wangjing@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
   "source": {
     "http": "https://images.tuyacn.com/smart/app/package/developer/sdk/1632471991-TuyaCameraSDK-3.31.1.zip",
@@ -45,5 +45,11 @@
     "TuyaAudioEngineSDK": [
 
     ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
 }

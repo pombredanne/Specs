@@ -8,17 +8,13 @@
     "Steven C": "stevennote1130@gmail.com"
   },
   "platforms": {
-    "ios": "9.0"
+    "ios": "13.0"
   },
   "source": {
     "git": "https://github.com/stevenchou1130/SCiOSToolbox.git",
     "tag": "0.0.1"
   },
   "source_files": "SCiOSToolbox/**/*.{h,m,swift}",
-  "frameworks": [
-    "Foundation",
-    "UIKit"
-  ],
   "swift_versions": "5.0",
   "swift_version": "5.0"
 }

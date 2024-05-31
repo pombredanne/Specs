@@ -1,5 +1,5 @@
 {
-  "description": "Ogury Choice Manager",
+  "description": "Ogury Choice Manager.",
   "vendored_frameworks": "OguryChoiceManager/OguryChoiceManager.xcframework",
   "frameworks": [
     "AdSupport",
@@ -25,11 +25,5 @@
   "platforms": {
     "ios": "10.0"
   },
-  "name": "OguryChoiceManager",
-  "pod_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "user_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  }
+  "name": "OguryChoiceManager"
 }

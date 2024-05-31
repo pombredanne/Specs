@@ -7,7 +7,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "fulang@tuya.com": "fulang@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
   "homepage": "https://tuya.com",
   "source": {
@@ -33,7 +33,7 @@
     "ios": "9.0"
   },
   "ios": {
-    "vendored_frameworks": "ios/*.framework"
+    "vendored_frameworks": "ios/TuyaSmartCameraKit.framework"
   },
   "dependencies": {
     "TuyaSmartCameraBase": [
@@ -48,8 +48,5 @@
     "TuyaSmartCameraM": [
 
     ]
-  },
-  "pod_target_xcconfig": {
-    "GCC_PREPROCESSOR_DEFINITIONS": "IPC_SDK"
   }
 }

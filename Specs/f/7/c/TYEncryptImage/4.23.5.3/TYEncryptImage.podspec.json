@@ -7,9 +7,9 @@
     "file": "LICENSE"
   },
   "authors": {
-    "tuyaLang": "fulang@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
-  "homepage": "https://tuya.com",
+  "homepage": "https://developer.tuya.com",
   "frameworks": [
     "UIKit",
     "CoreFoundation",

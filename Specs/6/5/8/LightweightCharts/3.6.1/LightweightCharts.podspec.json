@@ -18,12 +18,8 @@
   "platforms": {
     "ios": "10.0"
   },
-  "source_files": "LightweightCharts/**/*.swift",
-  "resources": "LightweightCharts/Assets/*",
+  "source_files": "Sources/LightweightCharts/**/*",
+  "resources": "Sources/LightweightCharts/Assets/*",
   "swift_versions": "5.0",
-  "script_phases": {
-    "name": "LightweightCharts",
-    "script": "LIBRARY=${TEMP_DIR}/lightweight-charts.js\n      \nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    curl -o $LIBRARY https://unpkg.com/lightweight-charts@3.6.1/dist/lightweight-charts.standalone.production.js\nelse\n    curl -o $LIBRARY https://unpkg.com/lightweight-charts@3.6.1/dist/lightweight-charts.standalone.development.js\nfi\n\ncp -f $LIBRARY ${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lightweight-charts.js"
-  },
   "swift_version": "5.0"
 }

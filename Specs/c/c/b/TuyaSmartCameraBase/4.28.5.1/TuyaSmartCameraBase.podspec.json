@@ -3,16 +3,16 @@
   "version": "4.28.5.1",
   "summary": "open SDK code for tuya smart camera.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://registry.code.tuya-inc.top/tuyaIOS/TuyaSmartCameraBase",
+  "homepage": "https://developer.tuya.com/",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fulang@tuya.com": "fulang@tuya.com"
+    "Tuya": "developer@tuya.com"
   },
   "source": {
-    "http": "https://images.tuyacn.com/smart/app/package/developer/sdk/1628674412-TuyaSmartCameraBase-4.28.5.1.zip",
+    "http": "https://images.tuyacn.com/smart/app/package/developer/sdk/1640245746-TuyaSmartCameraBase-4.28.5.1.zip",
     "type": "zip"
   },
   "platforms": {

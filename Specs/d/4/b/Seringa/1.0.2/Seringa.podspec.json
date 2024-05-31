@@ -12,11 +12,9 @@
     "VISION-BOX, S.A": "mobile.apps@vision-box.com"
   },
   "source": {
-    "http": "https://enrolmentsdk.blob.core.windows.net/ios/Seringa/Seringa-1.0.2.zip"
+    "http": "https://vbmobileidstorage.blob.core.windows.net/ios/MobileIdSDKiOS/Seringa/Seringa-1.0.2.zip"
   },
-  "ios": {
-    "vendored_frameworks": "Seringa.framework"
-  },
+  "vendored_frameworks": "Seringa.framework",
   "platforms": {
     "ios": "10.0"
   },

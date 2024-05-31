@@ -9,7 +9,7 @@
   },
   "authors": "Netease IM Team",
   "source": {
-    "git": "git@github.com:netease-kit/NIM_iOS_UIKit.git",
+    "git": "https://github.com/netease-kit/NIM_iOS_UIKit.git",
     "tag": "3.7.0"
   },
   "platforms": {

@@ -7,7 +7,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "fulang@tuya.com": "fulang@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
   "homepage": "https://tuya.com",
   "frameworks": [
@@ -19,8 +19,8 @@
     "CoreMedia",
     "CoreVideo",
     "VideoToolbox",
-    "MediaToolBox",
-    "Photos"
+    "Photos",
+    "GLKit"
   ],
   "libraries": [
     "c++",
@@ -50,5 +50,11 @@
     "TuyaSmartDeviceKit": [
 
     ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
 }

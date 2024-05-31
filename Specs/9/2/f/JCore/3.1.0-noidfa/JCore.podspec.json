@@ -15,7 +15,7 @@
     "ios": "7.0"
   },
   "source": {
-    "http": "https://sdkfiledl.jiguang.cn/cocoapods/jcore/JCore-iOS-3.1.0.2-noidfa.zip"
+    "http": "https://sdkfiledl.jiguang.cn/cocoapods/jcore/JCore-iOS-3.1.0.3-noidfa.zip"
   },
   "vendored_libraries": "*.a",
   "frameworks": [
@@ -26,8 +26,12 @@
     "SystemConfiguration",
     "CoreGraphics",
     "Foundation",
+    "WebKit",
     "Security"
   ],
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
+  },
   "source_files": "*.h",
   "weak_frameworks": [
     "UserNotifications",

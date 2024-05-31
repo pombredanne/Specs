@@ -14,12 +14,19 @@
     "ios": "10.0"
   },
   "source": {
-    "http": "https://bitbucket.org/polygon_/biometridon/downloads/BiometridON_1.1.5.zip"
+    "git": "https://bitbucket.org/biometrid/biometridon/src/",
+    "tag": "bio.on.1.1.5"
   },
   "ios": {
     "vendored_frameworks": [
       "BiometridOn.framework",
       "ZoomAuthentication.framework"
     ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   }
 }

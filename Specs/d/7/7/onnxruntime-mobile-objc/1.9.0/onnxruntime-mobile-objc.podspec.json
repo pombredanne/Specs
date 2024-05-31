@@ -12,7 +12,7 @@
     "ONNX Runtime": "onnxruntime@microsoft.com"
   },
   "source": {
-    "http": "https://onnxruntimepackages.blob.core.windows.net/ortmobilestore/onnxruntime-mobile-objc-1.9.0.zip"
+    "http": "https://onnxruntimepackages.z14.web.core.windows.net/pod-archive-onnxruntime-mobile-objc-1.9.0.zip"
   },
   "platforms": {
     "ios": "11.0"

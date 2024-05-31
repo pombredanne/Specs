@@ -2,33 +2,41 @@
   "name": "TuyaSmartCameraKit",
   "version": "4.32.5",
   "summary": "open SDK code for tuya smart camera.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://registry.code.tuya-inc.top/tuyaIOS/TuyaSmartCameraSDK",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "fulang@tuya.com": "fulang@tuya.com"
+    "developer@tuya.com": "developer@tuya.com"
   },
+  "homepage": "https://tuya.com",
   "source": {
     "http": "https://images.tuyacn.com/smart/app/package/developer/sdk/1637292243-TuyaSmartCameraKit-4.32.5.zip",
     "type": "zip"
   },
-  "platforms": {
-    "ios": "9.0"
-  },
-  "libraries": [
-    "c++",
-    "z",
-    "iconv"
-  ],
+  "static_framework": true,
+  "cocoapods_version": ">= 1.10",
   "frameworks": [
     "UIKit",
     "Foundation",
     "AVFoundation",
+    "Foundation",
     "Photos"
   ],
+  "libraries": [
+    "c++",
+    "z",
+    "iconv",
+    "bz2",
+    "resolv"
+  ],
+  "platforms": {
+    "ios": "9.0"
+  },
+  "ios": {
+    "vendored_frameworks": "Build/TuyaSmartCameraKit.xcframework",
+    "source_files": "Build/TuyaSmartCameraKit.xcframework/ios-arm64_armv7/TuyaSmartCameraKit.framework/Headers/*"
+  },
   "dependencies": {
     "TuyaSmartCameraBase": [
 
@@ -45,12 +53,5 @@
     "TYEncryptImage": [
 
     ]
-  },
-  "cocoapods_version": ">= 1.10",
-  "vendored_frameworks": [
-    "Build/TuyaSmartCameraKit.xcframework"
-  ],
-  "source_files": [
-    "Build/TuyaSmartCameraKit.xcframework/ios-arm64_armv7/TuyaSmartCameraKit.framework/Headers/*"
-  ]
+  }
 }

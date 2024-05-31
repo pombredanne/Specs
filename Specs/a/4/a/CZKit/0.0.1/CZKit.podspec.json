@@ -2,17 +2,14 @@
   "name": "CZKit",
   "version": "0.0.1",
   "summary": "Swift 工具箱",
-  "description": "TODO: Swift 开发组件：项目开发通用&非通用型模块代码，多功能组件，可快速集成使用以大幅减少基础工作量；便利性扩展&链式扩展附.各种类库使用示例demo.",
+  "description": "TODO: Swift 工具箱.",
   "homepage": "https://github.com/lczalh/CZKit",
-  "license": {
-    "type": "MIT",
-    "file": "FILE_LICENSE"
-  },
+  "license": "MIT",
   "authors": {
     "lczalh": "824092805@qq.com"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
   "swift_versions": [
     "5.0"
@@ -23,38 +20,66 @@
   },
   "frameworks": [
     "UIKit",
-    "Foundation"
+    "Foundation",
+    "WebKit",
+    "Photos",
+    "AudioToolbox",
+    "AppTrackingTransparency",
+    "AdSupport"
   ],
+  "dependencies": {
+    "SnapKit": [
+
+    ]
+  },
   "subspecs": [
     {
-      "name": "Core",
-      "source_files": "CZKit/Core/*.swift"
+      "name": "CZCore",
+      "source_files": [
+        "CZKit/ChainKit",
+        "CZKit/Manage",
+        "CZKit/Extension"
+      ]
     },
     {
-      "name": "ChainKit",
-      "source_files": "CZKit/ChainKit/*.swift"
-    },
-    {
-      "name": "ChainKit+SnapKit",
-      "source_files": "CZKit/ChainKit+SnapKit/*.swift",
+      "name": "CZUi",
+      "source_files": [
+        "CZKit/ChainKit+SnapKit",
+        "CZKit/Ui"
+      ],
       "dependencies": {
-        "CZKit/ChainKit": [
-
-        ],
         "SnapKit": [
+          "~> 5.0.1"
+        ],
+        "CZKit/CZCore": [
 
         ]
       }
     },
     {
-      "name": "Date",
-      "source_files": "CZKit/Date/*.swift",
+      "name": "CZMJRefreshExtension",
+      "source_files": "CZKit/MJRefresh",
       "dependencies": {
-        "CZKit/ChainKit": [
-
-        ],
-        "CZKit/Core": [
-
+        "MJRefresh": [
+          "~> 3.6.1"
+        ]
+      }
+    },
+    {
+      "name": "CZKingfisherExtension",
+      "source_files": "CZKit/Kingfisher",
+      "dependencies": {
+        "Kingfisher": [
+          "~> 7.0.0"
+        ]
+      }
+    },
+    {
+      "name": "CZHud",
+      "source_files": "CZKit/Hud",
+      "dependencies": {
+        "SVProgressHUD": [
+          "~> 2.2.5"
         ]
       }
     }
