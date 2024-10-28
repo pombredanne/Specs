@@ -23,7 +23,7 @@
   "vendored_frameworks": "**/MapboxSearch.xcframework",
   "dependencies": {
     "MapboxCommon": [
-      "~> 23.6"
+      "~> 23.10.1"
     ]
   },
   "swift_version": "5.7"

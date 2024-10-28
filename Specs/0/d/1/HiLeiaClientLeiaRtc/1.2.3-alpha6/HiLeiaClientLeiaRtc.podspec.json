@@ -23,16 +23,16 @@
   },
   "dependencies": {
     "HiLeiaSignaling": [
-      "~> 1.2.2.531-testing"
+      "~> 1.2.2.532-release"
     ],
     "LeiaRtcKit": [
       "~> 1.4.3"
     ],
     "CocoaLumberjack/Core": [
-
+      "~> 3.8.0"
     ],
     "CocoaLumberjack/Swift": [
-
+      "~> 3.8.0"
     ]
   }
 }

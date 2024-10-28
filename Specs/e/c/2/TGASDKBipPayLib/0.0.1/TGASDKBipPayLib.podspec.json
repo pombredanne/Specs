@@ -11,7 +11,7 @@
     "oauth2": "myplxdm@163.com"
   },
   "source": {
-    "http": "https://data.just4fun.sg/TGASDKBipPayLib1.4.0-0.0.1.zip",
+    "http": "https://test.just4fun.sg/TGASDKBipPayLib1.4.0-0.0.1.zip",
     "type": "zip"
   },
   "requires_arc": true,

@@ -18,6 +18,7 @@
   "platforms": {
     "ios": "13.0"
   },
+  "vendored_frameworks": "GizoSDK.xcframework",
   "dependencies": {
     "MapboxMaps": [
       "10.12.3"

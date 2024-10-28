@@ -13,16 +13,24 @@
   "source": {
     "http": "https://repo.polyv.net/ios/download/PLVFoundationSDK/PLVFoundationSDK_1.17.1-240531.zip"
   },
-  "default_subspecs": "Core",
+  "default_subspecs": [
+    "Core",
+    "PrivacyInfo"
+  ],
   "module_map": "Frameworks/MiniFramework/PLVFoundationSDK.framework/Modules/module.modulemap",
-  "resource_bundles": {
-    "PLVFoundationSDK": "Frameworks/PrivacyInfo.xcprivacy"
-  },
   "requires_arc": true,
   "subspecs": [
     {
       "name": "Core",
       "vendored_frameworks": "Frameworks/PLVFoundationSDK.framework"
+    },
+    {
+      "name": "PrivacyInfo",
+      "ios": {
+        "resource_bundles": {
+          "PLVFoundationSDK": "Frameworks/PrivacyInfo.xcprivacy"
+        }
+      }
     },
     {
       "name": "AbstractBase",
@@ -64,10 +72,7 @@
     },
     {
       "name": "Headers",
-      "source_files": "Frameworks/MiniFramework/PLVFoundationSDK.framework/Headers/*.h",
-      "resource_bundles": {
-        "PLVFoundationSDK": "Frameworks/PrivacyInfo.xcprivacy"
-      }
+      "source_files": "Frameworks/MiniFramework/PLVFoundationSDK.framework/Headers/*.h"
     },
     {
       "name": "BaseUtils",

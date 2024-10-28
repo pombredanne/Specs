@@ -16,12 +16,10 @@
   "default_subspecs": [
     "Core",
     "BaseSDK",
-    "Socket"
+    "Socket",
+    "PrivacyInfo"
   ],
   "module_map": "Frameworks/MiniFramework/PLVBusinessSDK.framework/Modules/module.modulemap",
-  "resource_bundles": {
-    "PLVBusinessSDK": "Frameworks/PrivacyInfo.xcprivacy"
-  },
   "requires_arc": true,
   "subspecs": [
     {
@@ -42,6 +40,14 @@
         "PLVSocketIOClientSwift": [
           "~> 0.2.1"
         ]
+      }
+    },
+    {
+      "name": "PrivacyInfo",
+      "ios": {
+        "resource_bundles": {
+          "PLVBusinessSDK": "Frameworks/PrivacyInfo.xcprivacy"
+        }
       }
     },
     {
@@ -103,10 +109,7 @@
     },
     {
       "name": "Headers",
-      "source_files": "Frameworks/MiniFramework/PLVBusinessSDK.framework/Headers/*.h",
-      "resource_bundles": {
-        "PLVBusinessSDK": "Frameworks/PrivacyInfo.xcprivacy"
-      }
+      "source_files": "Frameworks/MiniFramework/PLVBusinessSDK.framework/Headers/*.h"
     },
     {
       "name": "BaseRTC",

@@ -18,12 +18,10 @@
   },
   "default_subspecs": "CommonModel",
   "pod_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
-    "GENERATE_INFOPLIST_FILE": "YES"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "user_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64",
-    "GENERATE_INFOPLIST_FILE": "YES"
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "resource_bundles": {
     "TUIEmojiPlugin_Privacy": "**/TUIEmojiPlugin/Resources/PrivacyInfo.xcprivacy"

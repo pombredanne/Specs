@@ -1,7 +1,7 @@
 {
   "name": "VolcEngineRTC",
   "version": "3.41.301",
-  "summary": "Volc RTC SDK.",
+  "summary": "保利威 iOS Volc RTC SDK.",
   "homepage": "https://help.polyv.net/index.html#/live/ios/",
   "license": "MIT",
   "authors": {

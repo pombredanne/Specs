@@ -20,15 +20,21 @@
     "Core",
     "BaseSDK",
     "Player",
-    "OtherPart"
+    "OtherPart",
+    "PrivacyInfo"
   ],
-  "resource_bundles": {
-    "PLVLiveScenesSDK": "Frameworks/PrivacyInfo.xcprivacy"
-  },
   "subspecs": [
     {
       "name": "Core",
       "vendored_frameworks": "Frameworks/*.framework"
+    },
+    {
+      "name": "PrivacyInfo",
+      "ios": {
+        "resource_bundles": {
+          "PLVLiveScenesSDK": "Frameworks/PrivacyInfo.xcprivacy"
+        }
+      }
     },
     {
       "name": "BaseSDK",
@@ -37,6 +43,9 @@
           "1.17.0.1"
         ],
         "PLVBusinessSDK/BusinessSocket": [
+          "1.17.0.1"
+        ],
+        "PLVBusinessSDK/PrivacyInfo": [
           "1.17.0.1"
         ],
         "PLVFoundationSDK": [
@@ -164,6 +173,12 @@
         "PLVFoundationSDK/AbstractBase": [
           "1.17.0.1"
         ],
+        "PLVBusinessSDK/PrivacyInfo": [
+          "1.17.0.1"
+        ],
+        "PLVFoundationSDK/PrivacyInfo": [
+          "1.17.0.1"
+        ],
         "AgoraRtcEngine_Special_iOS": [
           "3.7.2.238"
         ],
@@ -232,6 +247,12 @@
         "PLVFoundationSDK/AbstractBase": [
           "1.17.0.1"
         ],
+        "PLVBusinessSDK/PrivacyInfo": [
+          "1.17.0.1"
+        ],
+        "PLVFoundationSDK/PrivacyInfo": [
+          "1.17.0.1"
+        ],
         "AgoraRtcEngine_Special_iOS": [
           "3.7.2.238"
         ],
@@ -289,6 +310,12 @@
           "1.17.0.1"
         ],
         "PLVFoundationSDK/AbstractBase": [
+          "1.17.0.1"
+        ],
+        "PLVBusinessSDK/PrivacyInfo": [
+          "1.17.0.1"
+        ],
+        "PLVFoundationSDK/PrivacyInfo": [
           "1.17.0.1"
         ],
         "AgoraRtcEngine_Special_iOS": [
@@ -350,6 +377,12 @@
         "PLVFoundationSDK/AbstractBase": [
           "1.17.0.1"
         ],
+        "PLVBusinessSDK/PrivacyInfo": [
+          "1.17.0.1"
+        ],
+        "PLVFoundationSDK/PrivacyInfo": [
+          "1.17.1"
+        ],
         "AgoraRtcEngine_Special_iOS": [
           "3.7.2.238"
         ],
@@ -410,10 +443,7 @@
     },
     {
       "name": "Headers",
-      "source_files": "Frameworks/MiniFramework/PLVLiveScenesSDK.framework/Headers/*.h",
-      "resource_bundles": {
-        "PLVLiveScenesSDK": "Frameworks/PrivacyInfo.xcprivacy"
-      }
+      "source_files": "Frameworks/MiniFramework/PLVLiveScenesSDK.framework/Headers/*.h"
     },
     {
       "name": "LinkMic",
